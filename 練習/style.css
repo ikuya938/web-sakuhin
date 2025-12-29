@@ -1,0 +1,75 @@
+body {
+   margin: 0;
+   background: #ffffff;
+   color: #5b3c1a;
+   front-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+   front-size: 20px;
+   line-height: 2;
+}
+
+.paper {
+   max-width: 720px;
+   margin: 40px auto;
+   padding: 40px 28px;
+   border-top: 6px solid #c51e1e;
+   border-bottom: 6px solid #cfa94f;
+}
+
+ .brush {
+   font-family: "Yu Mincho",serif;
+   letter-spacing: 0.08em;
+   font-size: 21px;
+}
+
+ h1 {
+   text-align: center;
+   front-weight: normal;
+   margin-bottom: 40px;
+ }
+ p {
+   margin: 0 0 1.5em 0;
+ }
+
+ .nav a {
+   text-decoration: none;
+   color: #5b3c1a;
+   front-size: 16px;
+ }
+
+ .nav a:hover {
+   text-decoration: underline;
+}
+
+ .broken {
+   font-family: "Yu Mincho", serif;
+   color: #333;
+   letter-spacing: 0.15em;
+   line-height: 2.2;
+ }
+
+ .broken p {
+   position: relative;
+ }
+
+ .broken p::after {
+   content: attr(date-text);
+   position: absolute;
+   left: 2px;
+   top: 1px;
+   color: rgba(0,0,0,0.3);
+   z-index: -1;
+ }
+
+ .broken p:nth-child(odd) {
+   transform: translateX(-2px);
+ }
+
+ .broken p:nth-child(even) {
+   transform: translateX(2px);
+ }
+
+ .broken p {
+   text-shadow:
+      1px 0 rgba(0,0,0,0.2)
+     -1px 0 rgba(0,0,0,0.1);
+ }
